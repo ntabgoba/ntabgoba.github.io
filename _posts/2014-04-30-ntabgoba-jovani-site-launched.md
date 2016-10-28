@@ -5,10 +5,7 @@ date: 2014-04-30
 ---
 Deep Learning Overview
 Ntabgoba Jovani 
-M.Sc. Student
-
-Deep Learning Course    taught by:
-Professor Hideki Kozima                                                
+M.Sc. Student                                               
 
 14th August 2016
 
