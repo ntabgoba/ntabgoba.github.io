@@ -73,7 +73,8 @@ GPUs have parallel architecture which speeds up vector and matrix computations, 
 #### A.	Convolutional Neural Networks
 
 Convolutional Neural Networks (ConvNets) is a form of neural networks with an architecture of visual cortex ventral path-way inspired by the classic notions of simple cells and complex cells in visual neuroscience [3].
-<img src="convnet.png",style="width:304px;height:228px;">
+
+<img src="images/convnet.png",style="width:304px;height:228px;">
 
 
 A convolutional layer is implemented by convolving the input with a set of filters, followed by elementwise non-linear function generating feature maps, each unit of a feature map is connected to local patches of the previous layer through a set of weights [8].
@@ -85,7 +86,8 @@ ConvNets is famous in image recognition following the 2012 ImageNet Large Scale 
 ####A.	Recurrent Neural Networks
 
 Recurrent Neural Networks (RNN), each neuron is self-connected with a constant weight w, to have a sort of memory. RNNs are well suited for sequential tasks like speech recognition and in natural language processing like predicting the next word in a sentence.
-<img src="recnn.png",style="width:304px;height:228px;">
+
+<img src="images/recnn.png",style="width:304px;height:228px;">
 
 Compared to the Deep Neural Network, an RNN has an extra input w, on each neuron, which is a record of the past activation. Since the input to the RNN is usually in time steps, the memorized weight w, helps to keep the contextualization of the pattern recognition.
 
@@ -95,14 +97,17 @@ Compared to the Deep Neural Network, an RNN has an extra input w, on each neuron
 
 Computer vision is one domain where deep learning registered great success compared to other machine learning techniques. Deep convolutional neural networks have been adopted by Tech industry giants like Google, Facebook and Baidu for image understanding and search. [10].
 For example, below are results of applying of IBM’s deep learning computer vision API called Alchemy on fig 1 images. This API combines deep learning with other machine learning algorithms.
-<img src="imagereco.png",style="width:304px;height:228px;">
+
+<img src="images/imagereco.png",style="width:304px;height:228px;">
 
 From Table 2. The API predicted correctly the image of a cow as a cow at 97% score. However, the API predicted the image of a goat as a sheep at 50% score. 
 
 #### B.Voice Recognition
 
 Deep Neural networks have also shown great performance in voice recognition.
-<img src="voicereco.png",style="width:304px;height:228px;">
+
+<img src="images/voicereco.png",style="width:304px;height:228px;">
+
 Table 3 is an example of Google Cloud Speech API [5] that converted my speech to text at 100% accuracy rate, despite my pronunciation being of a non-native English speaker. The API also offers 88% and 86.9% confidence as its certainty of what it heard.
 
 #### C.Text Analysis
@@ -110,12 +115,14 @@ Table 3 is an example of Google Cloud Speech API [5] that converted my speech to
 Recurrent neural networks are also have registered impressive performance in text analysis and sentiment analysis. 
 Below is a text analysis of part I and II of this paper using Alchemy Language API [6].
 
-<img src="sentana.png",style="width:304px;height:228px;">
+<img src="images/sentana.png",style="width:304px;height:228px;">
+
 Table 4, You notice that the highly relevant words are “data validation consistency” which surprisingly represent the machine learning processes of getting data, trying models that can be valid and then testing for consistency of the model.
 The API also offers the Sentiment analysis which turns out to be only positive and neutral.
 I.	Deep Learning Libraries
 There are several deep learning libraries but the major ones are developed in C++, Python, MATLAB and R programming languages. 
-<img src="nnsoft.png",style="width:304px;height:228px;">
+<img src="images/nnsoft.png",style="width:304px;height:228px;">
+
 There are several other deep learning algorithms. Some are too
 Specific for a given task and others are a bit general purpose.
 
