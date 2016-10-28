@@ -19,12 +19,15 @@ Deep learning is part of continued innovations in the machine learning field tha
 ### II.	Machine Learning
 Machine Learning refers to processes of using statistical methods to infer or predict one or more dependent variables based on independent variables. It involves the use of computers to do large computations to discover patterns.
 If we define a data set as n rows by p columns. For each row xi = x11 + x12+ …+ x1p, there is a corresponding yi (row name).  Y is a dependent variable and X is an independent variable. 
-<img src="matrix.png",style="width:304px;height:228px;">
+
+![Matrix](images/matrix.png)
 
 Often 2 or 3 datasets of the same object under scrutiny are required, namely training, testing and validation datasets. The training dataset is used to develop a model, a function that approximates the pattern(s) within the dataset. The Testing dataset is used to estimate the error rate, while validation dataset validates consistency of the model when applied to a dataset seen for the first time.
 
 For example, in a classification problem to distinguish whether a given image is a cow or a goat. Values of an image’s pixels will be the vector p of x independent variable and the factor variables (goat or cow) will be the Y dependent variable.
-<img src="cowgoat.png",style="width:304px;height:228px;">
+
+![Cowgoat](images/cowgoat.png)
+
 From fig 1, the pixel representations of images of a cow and a goat provide a large array that represents all the minute parts of the images.
 There are several machine learning approaches to discover patterns from a dataset. Examples are linear regression, decision trees, support vector machines and more. The ultimate goal of these algorithms is to develop a function f: X  Y.  The difference in these algorithms arise from the numerous regression or classification techniques that they each apply.
 Selection of which algorithm that best suits a given task, depends on several considerations like;
@@ -40,17 +43,19 @@ Supervised Learning is a type of machine learning where the training dataset use
 
 #### B.	Un Supervised Learning
 Un Supervised Learning is a type of machine learning where the training dataset’s dependent variables are not prior labeled by a human being. From above example, all image (x variables) will not be labeled in the training dataset.
-II.	Deep Learning Theory
+
+### III 	Deep Learning Theory
 Deep learning architecture is a multilayer stack of simple modules, all (or most) of which are subject to learning, and many of which compute non-linear input-output mappings. [3]. 
 Deep learning has three major kind of neural networks;
 
-#### A.	Deep Neural Networks
+#### A. Deep Neural Networks
 A standard neural network consists of a series of connected layers of processors called neurons, each using a nonlinear function to produce a sequence of real-valued activation. [4]
-<img src="nnlayers.png", style="width:304px;height:228px;">
+
+![nnlayers](images/nnlayers.png)
 
 A neural network consists of an input layer (color green), that has several connections to the hidden layers (color red) that also lead to an output layer (color blue).
 The above figure essentially involves two processes, that is;
-Feedforward process
+*Feedforward process*
 Each connection is given a random small number called a weight wi and an input xi , resulting into zi = wi xi  . Therefore, zi is an input at every neuron of a hidden layer. The summation of all zi inputs to each neuron is activated using a nonlinear function like a Rectified Linear Unit (ReLU) or a Sigmoid function. Each hidden layer neuron produces an output;
 yi = f(zi).   These outputs yi are fed into subsequent layers of the hidden layers up to the output layer youtput 
 The mathematical transformations due to this distributed addition of weights and activation functions is derived using chain rule of derivatives.
@@ -59,23 +64,23 @@ Empirically, the performance of neural networks will differ from task to task. T
 -Increase the number of neurons on each layer (making it wider).
 
 - Change the activation function from ReLU to sigmoid or tangent function or other type of nonlinear function. [7]
-Backpropagation
-	From feedforward neural network, there is no way of real time comparison of the predicted output with the accurate human labeled training dataset variables.
+*Backpropagation*
+
+From feedforward neural network, there is no way of real time comparison of the predicted output with the accurate human labeled training dataset variables.
 Backpropagation is a process of recursively comparing the predicted out with the accurate variable, and feeding back their difference into the neural network in a backward direction similar to the feedforward.
      dE/dyi = predicted variable - accurate variable
 Where: predicted variable = youtput
-                   Accurate variable = human labeled variable in training dataset.
+     Accurate variable = human labeled variable in training dataset.
 The error dE/dyi, is propagated backwards throughout the hidden layers, hence gradually adjusting the randomly assigned weights of the connections [3]. 
 It is this repeated process of feed forward, comparing the output with the accurate variable and back propagating the error, that finally leads to high performing neural networks. 
 As the network gets deeper, wider and as the number of iterations of feedforward and backward propagation gets larger, Neural networks require a lot of computational power. This is the reason why most libraries that deal with deep neural networks also run on Graphical Processing Units (GPUs). 
 GPUs have parallel architecture which speeds up vector and matrix computations, reducing the run time from months (if on CPU) to weeks or days (if on GPU).
 
-#### A.	Convolutional Neural Networks
+#### B.	Convolutional Neural Networks
 
 Convolutional Neural Networks (ConvNets) is a form of neural networks with an architecture of visual cortex ventral path-way inspired by the classic notions of simple cells and complex cells in visual neuroscience [3].
 
-<img src="images/convnet.png",style="width:304px;height:228px;">
-
+![Convnets](images/convnet.png)
 
 A convolutional layer is implemented by convolving the input with a set of filters, followed by elementwise non-linear function generating feature maps, each unit of a feature map is connected to local patches of the previous layer through a set of weights [8].
 ConvNets capitalize on the properties of natural signals; local connections, shared weights, pooling and the use of many layers. A convolution layer detects local conjunctions of features from a previous layer and pooling merges semantically similar features into one [3]. Units of a given feature map in two consecutive convolution layers are connected together with the same weights called a filter bank. 
@@ -83,11 +88,11 @@ This notion of equal weights allows pooling to easily merge similar motifs witho
 On the other hand, Feature maps form local groups of motifs that are often spatially correlated and thus easy to detect. For example, feature maps of the goat’s eye will often appear near to the feature maps of the goat’s nose, irrespective of whether the test dataset images are of a goat facing up or down or sideways.
 ConvNets is famous in image recognition following the 2012 ImageNet Large Scale Visual Recognition Challenge, where a ConvNets architecture called AlexNet won the contest [9].
 
-####A.	Recurrent Neural Networks
+####   C. Recurrent Neural Networks
 
 Recurrent Neural Networks (RNN), each neuron is self-connected with a constant weight w, to have a sort of memory. RNNs are well suited for sequential tasks like speech recognition and in natural language processing like predicting the next word in a sentence.
 
-<img src="images/recnn.png",style="width:304px;height:228px;">
+![Reconn](images/recnn.png)
 
 Compared to the Deep Neural Network, an RNN has an extra input w, on each neuron, which is a record of the past activation. Since the input to the RNN is usually in time steps, the memorized weight w, helps to keep the contextualization of the pattern recognition.
 
@@ -98,7 +103,8 @@ Compared to the Deep Neural Network, an RNN has an extra input w, on each neuron
 Computer vision is one domain where deep learning registered great success compared to other machine learning techniques. Deep convolutional neural networks have been adopted by Tech industry giants like Google, Facebook and Baidu for image understanding and search. [10].
 For example, below are results of applying of IBM’s deep learning computer vision API called Alchemy on fig 1 images. This API combines deep learning with other machine learning algorithms.
 
-<img src="images/imagereco.png",style="width:304px;height:228px;">
+![Imagereco](images/imagereco.png)
+
 
 From Table 2. The API predicted correctly the image of a cow as a cow at 97% score. However, the API predicted the image of a goat as a sheep at 50% score. 
 
@@ -106,7 +112,7 @@ From Table 2. The API predicted correctly the image of a cow as a cow at 97% sco
 
 Deep Neural networks have also shown great performance in voice recognition.
 
-<img src="images/voicereco.png",style="width:304px;height:228px;">
+![Voicereco](images/voicereco.png)
 
 Table 3 is an example of Google Cloud Speech API [5] that converted my speech to text at 100% accuracy rate, despite my pronunciation being of a non-native English speaker. The API also offers 88% and 86.9% confidence as its certainty of what it heard.
 
@@ -115,13 +121,14 @@ Table 3 is an example of Google Cloud Speech API [5] that converted my speech to
 Recurrent neural networks are also have registered impressive performance in text analysis and sentiment analysis. 
 Below is a text analysis of part I and II of this paper using Alchemy Language API [6].
 
-<img src="images/sentana.png",style="width:304px;height:228px;">
+![Sentana](images/sentana.png)
 
 Table 4, You notice that the highly relevant words are “data validation consistency” which surprisingly represent the machine learning processes of getting data, trying models that can be valid and then testing for consistency of the model.
 The API also offers the Sentiment analysis which turns out to be only positive and neutral.
 I.	Deep Learning Libraries
 There are several deep learning libraries but the major ones are developed in C++, Python, MATLAB and R programming languages. 
-<img src="images/nnsoft.png",style="width:304px;height:228px;">
+
+![nnsoft](images/nnsoft.png)
 
 There are several other deep learning algorithms. Some are too
 Specific for a given task and others are a bit general purpose.
