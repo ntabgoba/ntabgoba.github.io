@@ -130,6 +130,8 @@ There are several deep learning libraries but the major ones are developed in C+
 
 ![nnsoft](images/nnsoft.png)
 
+<img src="images/nnsoft.png" alt="" />
+
 There are several other deep learning algorithms. Some are too
 Specific for a given task and others are a bit general purpose.
 
