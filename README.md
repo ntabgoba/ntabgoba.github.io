@@ -1,2 +1,3 @@
-# ntabgoba.github.io
-Academic Blog
+ntabgoba.github.io
+=====================
+Blog for Academic purposes
