@@ -123,16 +123,12 @@ Below is a text analysis of part I and II of this paper using Alchemy Language A
 
 ![Sentana](images/sentana.png)
 
-<img src="posts/images/sentana.png" alt="Sentment Analysis" />
-
 Table 4, You notice that the highly relevant words are “data validation consistency” which surprisingly represent the machine learning processes of getting data, trying models that can be valid and then testing for consistency of the model.
 The API also offers the Sentiment analysis which turns out to be only positive and neutral.
 I.	Deep Learning Libraries
 There are several deep learning libraries but the major ones are developed in C++, Python, MATLAB and R programming languages. 
 
 ![nnsoft](images/nnsoft.png)
-
-<img src="ntabgoba.github.io/posts/images/nnsoft.png" alt="" />
 
 There are several other deep learning algorithms. Some are too
 Specific for a given task and others are a bit general purpose.
