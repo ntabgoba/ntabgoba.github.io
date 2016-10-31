@@ -1,7 +1,7 @@
 ---
 layout: post
 title: "Introduction to Deep Learning"
-date: 2014-04-30
+date: 2016-08-15
 ---                                             
 Abstract—This paper is a brief introduction to the theoretical and application of deep learning. 
 
